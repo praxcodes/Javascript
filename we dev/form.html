@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>forms</h1>
+    <form action="/shelter" id="shelterForm"> 
+    <input type="text" id="catName"/>
+    <button type="button">SUBMIT</button>
+    <!--when the form is submitted, the data contained is sent to the value of the action field in form-->
+    <!--when we submit the form the page changes and takes us to wherever the action is-->
+    <!--but we want to stay on the same page with some change of text or data-->
+</form>
+<h2>
+    Available Cats
+</h2>
+<ul id="cats"></ul>
+<style>
+    .hide{        
+        display:none;
+    }
+</style>
+    <!--this is a css style class-->
+
+
+
+<!--event bubbling : the elements nested in other events also listen to events and act for it-->
+<div id="container">
+    click to hide 
+    <button id="changecolor">change color</button>
+</div>
+
+
+    <script src="EVENT.js"></script>
+    
+</body>
+</html>
